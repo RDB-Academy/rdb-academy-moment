@@ -1,28 +1,29 @@
 {
-  "name": "react-moment",
+  "name": "rdb-academy-moment",
   "description": "React component for the moment date library.",
   "version": "0.2.2",
   "author": {
     "name": "Sean Hickey",
     "web": "http://headzoo.io"
   },
-  "dependencies": {},
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
   "devDependencies": {
     "babel-core": "^6.14.0",
-    "babel-jest": "^15.0.0",
-    "babel-loader": "^6.2.5",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
-    "jest": "^15.1.1",
+    "jest": "^20.0.3",
     "json-loader": "^0.5.4",
     "moment": "^2.15.1",
     "moment-timezone": "^0.5.11",
-    "react": "^15.3.1",
-    "react-addons-test-utils": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "rimraf": "^2.5.4",
-    "webpack": "^1.13.2"
+    "webpack": "^2.5.1"
   },
   "jest": {
     "testRegex": "/tests/.*"
@@ -39,11 +40,11 @@
   "peerDependencies": {
     "moment": "^2.15.1",
     "moment-timezone": "^0.5.11",
-    "react": "^15.0.0"
+    "react": "^15.5.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/headzoo/react-moment.git"
+    "url": "git+https://github.com/RDB-Academy/rdb-academy-moment.git"
   },
   "scripts": {
     "build": "npm run clean && webpack",
