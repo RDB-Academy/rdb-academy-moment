@@ -1,11 +1,17 @@
 'use strict';
 
+const path = require('path');
+
+const entryPath = path.resolve(__dirname, './src/index.js');
+const outputPath = path.resolve(__dirname, './dist');
+const outputLibrary = path.resolve(__dirname, 'rdb-academy-moment');
+
 module.exports = {
-    entry: './src/index.js',
+    entry: entryPath,
     output: {
-        path: './dist',
+        path: outputPath,
         filename: 'index.js',
-        library: 'react-moment',
+        library: outputLibrary,
         libraryTarget: 'umd'
     },
     externals: [
@@ -51,6 +57,6 @@ module.exports = {
         ]
     },
     resolve: {
-      extensions: ['', '.json', '.js', '.jsx']
+      extensions: ['.json', '.js', '.jsx']
     }
 };
